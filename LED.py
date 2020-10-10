@@ -2,9 +2,9 @@
 from time import sleep
 from ipstw_ku import ipstw as iw
 while True:
-  led.value(0)
+  iw.led.value(0)
   sleep(1)
-  led.value(1)
+  iw.led.value(1)
   sleep(1)
 
 
