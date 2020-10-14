@@ -69,7 +69,9 @@ def my_user_task():
   blynk.virtual_write(1, temp)
   blynk.virtual_write(2, phValue)
   if (phValue >= 8.0) or (phValue <= 5.0) :
-    blynk.notify('>>>Alert<<<')
+    blynk.notify('>>>PH value is lower than standard<<<')
+  elif (phValue >= 8.0) or (phValue <= 5.0) :
+    blynk.notify('>>> pH is lower than standard<<<')
 
   mqtt_str = "Temperature : "+str(temp)+" PH : "+str(phValue)
   mqtt.check_msg() 
