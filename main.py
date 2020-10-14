@@ -68,7 +68,7 @@ def my_user_task():
   phValue = volt*3.5+2.5
   blynk.virtual_write(1, temp)
   blynk.virtual_write(2, phValue)
-  if temp >= 25.0 :
+  if (phValue >= 8.0) or (phValue <= 5.0) :
     blynk.notify('>>>Alert<<<')
 
   mqtt_str = "Temperature : "+str(temp)+" PH : "+str(phValue)
