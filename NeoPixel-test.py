@@ -1,6 +1,6 @@
 import time
 from machine import Pin
-from NeoPixelLib import NeoPixel
+from neopixel import NeoPixel
 
 np = NeoPixel (Pin(19),12)
 RED = (255,0,0)
